@@ -17,22 +17,21 @@ import sd_dtu.genericmoniteringapplication.R;
 public class UserMode extends Fragment {
 
 
-    public Button alertbtn,databtn,actuationbtn;
+    Button alertbtn,databtn,actuationbtn;
     FloatingActionButton floatingActionButton;
     public void clicks(){
-
+        alertbtn=(Button)getActivity().findViewById(R.id.alertsbtn);
+        databtn=(Button)getActivity().findViewById(R.id.databtn);
+        actuationbtn=(Button)getActivity().findViewById(R.id.actuationbtn);
+        floatingActionButton=(FloatingActionButton)getActivity().findViewById(R.id.fab);
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         RelativeLayout relativeLayout=(RelativeLayout)inflater.inflate(R.layout.fragment_user_mode, container, false);
-        alertbtn=(Button)getView().findViewById(R.id.alertsbtn);
-        databtn=(Button)getView().findViewById(R.id.databtn);
-        actuationbtn=(Button)getView().findViewById(R.id.actuationbtn);
-        floatingActionButton=(FloatingActionButton)getView().findViewById(R.id.fab);
-        clicks();
 
+        clicks();
 
         return relativeLayout;
     }

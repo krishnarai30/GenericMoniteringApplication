@@ -7,33 +7,6 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ALERTS"
-        android:id="@+id/alertsbtn"
-        android:layout_marginTop="133dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ACTUATION"
-        android:id="@+id/actuationbtn"
-        android:layout_marginTop="70dp"
-        android:layout_below="@+id/alertsbtn"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="DATA"
-        android:id="@+id/databtn"
-        android:layout_below="@+id/actuationbtn"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="90dp" />
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
@@ -46,5 +19,36 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ALERTS"
+        android:id="@+id/alertsbtn"
+        android:layout_marginTop="133dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|bottom" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACTUATION"
+        android:id="@+id/actuationbtn"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/alertsbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|top" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DATA"
+        android:id="@+id/databtn"
+        android:layout_below="@+id/actuationbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:layout_gravity="center" />
 
 </RelativeLayout>
