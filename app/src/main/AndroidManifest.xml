@@ -18,7 +18,7 @@
         <activity android:name=".MenuActivity" />
         <activity android:name=".ConfigureActivity" />
         <activity android:name=".ConnectActivity" />
-        <activity android:name=".FinalActivity"></activity>
+        <activity android:name=".FinalActivity" />
     </application>
 
 </manifest>
