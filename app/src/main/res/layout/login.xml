@@ -66,21 +66,19 @@
         android:layout_height="wrap_content"
         android:text="Sign Up"
         android:id="@+id/textView"
-        android:layout_below="@+id/editText2"
-        android:layout_toLeftOf="@+id/editText2"
-        android:layout_toStartOf="@+id/editText2"
-        android:layout_marginTop="43dp" />
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignRight="@+id/user"
+        android:layout_alignEnd="@+id/user" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Forgot Password"
         android:id="@+id/textView2"
-        android:layout_alignTop="@+id/textView"
-        android:layout_toRightOf="@+id/textView"
-        android:layout_toEndOf="@+id/textView"
-        android:layout_marginLeft="66dp"
-        android:layout_marginStart="66dp" />
+        android:layout_below="@+id/login"
+        android:layout_toRightOf="@+id/login"
+        android:layout_toEndOf="@+id/login"
+        android:layout_marginTop="81dp" />
 
 
 </RelativeLayout>
