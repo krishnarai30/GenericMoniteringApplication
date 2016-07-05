@@ -68,7 +68,8 @@
         android:id="@+id/textView"
         android:layout_alignTop="@+id/textView2"
         android:layout_alignRight="@+id/user"
-        android:layout_alignEnd="@+id/user" />
+        android:layout_alignEnd="@+id/user"
+        android:onClick="onclicksignupi" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -78,7 +79,8 @@
         android:layout_below="@+id/login"
         android:layout_toRightOf="@+id/login"
         android:layout_toEndOf="@+id/login"
-        android:layout_marginTop="81dp" />
+        android:layout_marginTop="81dp"
+        android:onClick="onclickforgeti" />
 
 
 </RelativeLayout>

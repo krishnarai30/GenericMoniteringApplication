@@ -25,4 +25,12 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent=new Intent(this,MenuActivity.class);
         startActivity(intent);
     }
+    public void onclicksignupi(View view){
+        Intent intentsigni=new Intent(this,SignUpActivity.class);
+        startActivity(intentsigni);
+    }
+    public void onclickforgeti(View view){
+        Intent intentsigni=new Intent(this,ForgetPassActivity.class);
+        startActivity(intentsigni);
+    }
 }

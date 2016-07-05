@@ -19,6 +19,8 @@
         <activity android:name=".ConfigureActivity" />
         <activity android:name=".ConnectActivity" />
         <activity android:name=".FinalActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".ForgetPassActivity"></activity>
     </application>
 
 </manifest>
