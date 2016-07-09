@@ -7,4 +7,53 @@
 
     <!-- TODO: Update blank fragment layout -->
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ALERTS"
+        android:id="@+id/alertbtn2"
+        android:layout_marginTop="125dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/databtn2"
+        android:layout_alignStart="@+id/databtn2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANALYTICS"
+        android:id="@+id/analyticsbtn1"
+        android:layout_below="@+id/alertbtn2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULATE"
+        android:id="@+id/calculatebtn1"
+        android:layout_below="@+id/analyticsbtn1"
+        android:layout_alignLeft="@+id/analyticsbtn1"
+        android:layout_alignStart="@+id/analyticsbtn1"
+        android:layout_marginTop="54dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DATA"
+        android:id="@+id/databtn2"
+        android:layout_below="@+id/calculatebtn1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@android:drawable/ic_dialog_email"
+        android:layout_marginRight="41dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>

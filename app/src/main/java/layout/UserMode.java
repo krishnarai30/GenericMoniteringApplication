@@ -19,7 +19,7 @@ public class UserMode extends Fragment {
 
     Button alertbtn,databtn,actuationbtn;
     FloatingActionButton floatingActionButton;
-    public void clicks(){
+    public void clicks1(){
         alertbtn=(Button)getActivity().findViewById(R.id.alertsbtn);
         databtn=(Button)getActivity().findViewById(R.id.databtn);
         actuationbtn=(Button)getActivity().findViewById(R.id.actuationbtn);
@@ -31,7 +31,7 @@ public class UserMode extends Fragment {
         // Inflate the layout for this fragment
         RelativeLayout relativeLayout=(RelativeLayout)inflater.inflate(R.layout.fragment_user_mode, container, false);
 
-        clicks();
+        clicks1();
 
         return relativeLayout;
     }
