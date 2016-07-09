@@ -12,7 +12,9 @@ import android.support.design.widget.FloatingActionButton;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 
+import sd_dtu.genericmoniteringapplication.ActuationActivity;
 import sd_dtu.genericmoniteringapplication.AlertsActivity;
+import sd_dtu.genericmoniteringapplication.DataActivity;
 import sd_dtu.genericmoniteringapplication.FeedBackActivity;
 import sd_dtu.genericmoniteringapplication.R;
 
@@ -28,6 +30,13 @@ public class UserMode extends Fragment {
         actuationbtn=(Button)v.findViewById(R.id.actuationbtn);
         floatingActionButton=(FloatingActionButton)v.findViewById(R.id.fab);
 
+        actuationbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentac=new Intent(getActivity().getBaseContext(),ActuationActivity.class);
+                startActivity(intentac);
+            }
+        });
         alertbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -40,6 +49,13 @@ public class UserMode extends Fragment {
             public void onClick(View view) {
                 Intent intentf=new Intent(getActivity().getBaseContext(),FeedBackActivity.class);
                 startActivity(intentf);
+            }
+        });
+        databtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentd=new Intent(getActivity().getBaseContext(),DataActivity.class);
+                startActivity(intentd);
             }
         });
     }

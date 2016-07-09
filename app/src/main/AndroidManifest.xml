@@ -22,7 +22,12 @@
         <activity android:name=".SignUpActivity" />
         <activity android:name=".ForgetPassActivity" />
         <activity android:name=".AlertsActivity" />
-        <activity android:name=".FeedBackActivity"></activity>
+        <activity android:name=".FeedBackActivity" />
+        <activity android:name=".DataActivity" />
+        <activity android:name=".ActuationActivity" />
+        <activity android:name=".CalculateActivity" />
+        <activity android:name=".ResultActivity" />
+        <activity android:name=".TrendActivity"></activity>
     </application>
 
 </manifest>

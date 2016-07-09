@@ -11,9 +11,12 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 
 import sd_dtu.genericmoniteringapplication.AlertsActivity;
+import sd_dtu.genericmoniteringapplication.CalculateActivity;
+import sd_dtu.genericmoniteringapplication.DataActivity;
 import sd_dtu.genericmoniteringapplication.FeedBackActivity;
 import sd_dtu.genericmoniteringapplication.R;
-
+import sd_dtu.genericmoniteringapplication.ResultActivity;
+import sd_dtu.genericmoniteringapplication.TrendActivity;
 
 
 public class ExpertMode extends Fragment {
@@ -27,11 +30,43 @@ public class ExpertMode extends Fragment {
         databtn3=(Button)view.findViewById(R.id.databtn3);
         calculatebtn2=(Button)view.findViewById(R.id.calculatebtn2);
         floatingActionButton3=(FloatingActionButton)view.findViewById(R.id.fab3);
+
+        trendbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentt=new Intent(getActivity().getBaseContext(),TrendActivity.class);
+                startActivity(intentt);
+            }
+        });
+
+        resultbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentr=new Intent(getActivity().getBaseContext(),ResultActivity.class);
+                startActivity(intentr);
+            }
+        });
+
+        calculatebtn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentc=new Intent(getActivity().getBaseContext(),CalculateActivity.class);
+                startActivity(intentc);
+            }
+        });
+
         floatingActionButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intentf=new Intent(getActivity().getBaseContext(),FeedBackActivity.class);
                 startActivity(intentf);
+            }
+        });
+        databtn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentd=new Intent(getActivity().getBaseContext(),DataActivity.class);
+                startActivity(intentd);
             }
         });
 

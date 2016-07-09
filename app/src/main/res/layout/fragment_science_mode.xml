@@ -21,8 +21,8 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ANALYTICS"
-        android:id="@+id/analyticsbtn1"
+        android:text="ACTUATION"
+        android:id="@+id/actuationbtn2"
         android:layout_below="@+id/alertbtn2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="54dp" />
@@ -32,9 +32,9 @@
         android:layout_height="wrap_content"
         android:text="CALCULATE"
         android:id="@+id/calculatebtn1"
-        android:layout_below="@+id/analyticsbtn1"
-        android:layout_alignLeft="@+id/analyticsbtn1"
-        android:layout_alignStart="@+id/analyticsbtn1"
+        android:layout_below="@+id/actuationbtn2"
+        android:layout_alignLeft="@+id/actuationbtn2"
+        android:layout_alignStart="@+id/actuationbtn2"
         android:layout_marginTop="54dp" />
 
     <Button
