@@ -15,7 +15,8 @@
         android:layout_marginTop="125dp"
         android:layout_alignParentTop="true"
         android:layout_alignLeft="@+id/databtn2"
-        android:layout_alignStart="@+id/databtn2" />
+        android:layout_alignStart="@+id/databtn2"
+        android:onClick="onclickalert(" />
 
     <Button
         android:layout_width="wrap_content"

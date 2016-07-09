@@ -21,7 +21,8 @@
         <activity android:name=".FinalActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".ForgetPassActivity" />
-        <activity android:name=".AlertsActivity"></activity>
+        <activity android:name=".AlertsActivity" />
+        <activity android:name=".FeedBackActivity"></activity>
     </application>
 
 </manifest>
