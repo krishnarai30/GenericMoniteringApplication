@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#071548</item>
+        <item name="colorAccent">#1139be</item>
+    </style>
+
+    <style name="MyTabStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="buttonandtext">
+        <item name="android:height">40dp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+   />
+
+    +    <style name="SignUpEditTextStyle" parent = "Base.V12.Widget.AppCompat.EditText">
+    +        <item name="android:layout_gravity">center_horizontal</item>
+    +        <item name="android:ems">12</item>
+    +        <item name="android:background">@drawable/login</item>
+    +        <item name="android:layout_margin">8dp</item>
+    +        <item name="android:textCursorDrawable">@null</item>
+    +        <item name="android:layout_height">40dp</item>
+    <item name="colorAccent">#51c73e</item>
+    +    </style>
+
+</resources>
