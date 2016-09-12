@@ -4,8 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@android:color/holo_blue_dark"
-    tools:context="sd_dtu.genericmoniteringapplication.SignUpActivity">
+    android:background="@drawable/background"
+
+tools:context="sd_dtu.genericmoniteringapplication.SignUpActivity">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,14 +18,17 @@
         android:layout_marginTop="30dp"
         android:layout_marginBottom="40dp"/>
     <EditText
-        android:layout_width="wrap_content"
+
+        android:layout_width="320dp"
+        android:paddingLeft="5dp"
         android:id="@+id/usernameet"
         style="@style/SignUpEditTextStyle"
         android:inputType="text"
         android:hint="  Username"/>
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="320dp"
+        android:paddingLeft="5dp"
         android:inputType="textPassword"
         android:ems="12"
         android:hint=" Password"
@@ -33,21 +37,24 @@
         android:id="@+id/pass1et" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="320dp"
+        android:paddingLeft="5dp"
         android:inputType="textPassword"
         style="@style/SignUpEditTextStyle"
         android:hint=" Confirm Password"
         android:id="@+id/pass2et" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="320dp"
+        android:paddingLeft="5dp"
         android:inputType="textEmailAddress"
         style="@style/SignUpEditTextStyle"
         android:hint="  Email"
         android:id="@+id/emailet" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="320dp"
+        android:paddingLeft="5dp"
         android:inputType="phone"
         style="@style/SignUpEditTextStyle"
         android:hint="  Mobile"
