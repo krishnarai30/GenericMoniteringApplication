@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_blue_dark"
+    tools:context="sd_dtu.genericmoniteringapplication.SignUpActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create your \n  Account!"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="40dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:id="@+id/usernameet"
+        style="@style/SignUpEditTextStyle"
+        android:inputType="text"
+        android:hint="  Username"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:inputType="textPassword"
+        android:ems="12"
+        android:hint=" Password"
+        style="@style/SignUpEditTextStyle"
+        android:background="@drawable/login"
+        android:id="@+id/pass1et" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:inputType="textPassword"
+        style="@style/SignUpEditTextStyle"
+        android:hint=" Confirm Password"
+        android:id="@+id/pass2et" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:inputType="textEmailAddress"
+        style="@style/SignUpEditTextStyle"
+        android:hint="  Email"
+        android:id="@+id/emailet" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:inputType="phone"
+        style="@style/SignUpEditTextStyle"
+        android:hint="  Mobile"
+        android:id="@+id/mobileet" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:ems="15"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/button"
+        android:background="@drawable/button"
+        android:layout_marginTop="32dp"
+        android:onClick="onclicksignupf" />
+
+</LinearLayout>
