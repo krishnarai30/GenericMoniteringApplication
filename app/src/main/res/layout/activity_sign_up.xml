@@ -1,123 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="sd_dtu.genericmoniteringapplication.SignUpActivity">
+    android:orientation="vertical"
+    android:background="@drawable/background"
 
+tools:context="sd_dtu.genericmoniteringapplication.SignUpActivity">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="User Name"
-        android:id="@+id/textView19"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="72dp" />
+        android:text="Create your \n  Account!"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="40dp"/>
+    <EditText
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Password"
-        android:id="@+id/textView20"
-        android:layout_below="@+id/textView19"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="57dp" />
+        android:layout_width="320dp"
+        android:paddingLeft="5dp"
+        android:id="@+id/usernameet"
+        style="@style/SignUpEditTextStyle"
+        android:inputType="text"
+        android:hint="  Username"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Re-Enter Password"
-        android:id="@+id/textView21"
-        android:layout_marginTop="48dp"
-        android:layout_below="@+id/textView20"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="320dp"
+        android:paddingLeft="5dp"
+        android:inputType="textPassword"
+        android:ems="12"
+        android:hint=" Password"
+        style="@style/SignUpEditTextStyle"
+        android:background="@drawable/login"
+        android:id="@+id/pass1et" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Email"
-        android:id="@+id/textView22"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="320dp"
+        android:paddingLeft="5dp"
+        android:inputType="textPassword"
+        style="@style/SignUpEditTextStyle"
+        android:hint=" Confirm Password"
+        android:id="@+id/pass2et" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Mobile"
-        android:id="@+id/textView23"
-        android:layout_below="@+id/textView22"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="42dp" />
+    <EditText
+        android:layout_width="320dp"
+        android:paddingLeft="5dp"
+        android:inputType="textEmailAddress"
+        style="@style/SignUpEditTextStyle"
+        android:hint="  Email"
+        android:id="@+id/emailet" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:paddingLeft="5dp"
+        android:inputType="phone"
+        style="@style/SignUpEditTextStyle"
+        android:hint="  Mobile"
+        android:id="@+id/mobileet" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SIGN UP"
+        android:ems="15"
+        android:layout_gravity="center_horizontal"
         android:id="@+id/button"
-        android:layout_below="@+id/textView23"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="78dp"
+        android:background="@drawable/button"
+        android:layout_marginTop="32dp"
         android:onClick="onclicksignupf" />
 
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/usernameet"
-        android:layout_above="@+id/textView20"
-        android:layout_toRightOf="@+id/textView21"
-        android:layout_toEndOf="@+id/textView21" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/pass1et"
-        android:layout_alignBottom="@+id/textView20"
-        android:layout_toRightOf="@+id/textView21"
-        android:layout_toEndOf="@+id/textView21" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/pass2et"
-        android:layout_alignBottom="@+id/textView21"
-        android:layout_toRightOf="@+id/textView21"
-        android:layout_toEndOf="@+id/textView21" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:ems="10"
-        android:id="@+id/emailet"
-        android:layout_alignBottom="@+id/textView22"
-        android:layout_toRightOf="@+id/textView21"
-        android:layout_toEndOf="@+id/textView21" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="phone"
-        android:ems="10"
-        android:id="@+id/mobileet"
-        android:layout_alignBottom="@+id/textView23"
-        android:layout_toRightOf="@+id/textView21"
-        android:layout_toEndOf="@+id/textView21" />
-</RelativeLayout>
+</LinearLayout>
