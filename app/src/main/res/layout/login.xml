@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".LoginActivity"
-    android:background="@android:color/holo_blue_dark">
+    android:background="@drawable/background">
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
             android:id="@+id/editText"
             android:layout_marginTop="52dp"
             android:hint="    User Name"
-            android:background="@drawable/login"
+           android:background="@drawable/edit_text_style"
             >
             <requestFocus/>
         </EditText>
@@ -44,7 +44,7 @@
             android:inputType="textPassword"
             android:ems="10"
             android:id="@+id/editText2"
-            android:background="@drawable/login"
+            android:background="@drawable/edit_text_style"
             android:hint="  Password"
             android:layout_weight="0.11" />
     </LinearLayout>
@@ -64,7 +64,7 @@
             android:text="Sign In"
             android:id="@+id/login"
             android:onClick="onclick"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"
             android:background="@drawable/button"
             android:layout_above="@+id/textView"
             android:layout_alignParentLeft="true"
@@ -79,7 +79,7 @@
             android:text="Sign Up"
             android:id="@+id/textView"
             android:onClick="onclicksignupi"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"
             android:background="@drawable/button"
 
             android:layout_centerVertical="true"
@@ -101,7 +101,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="48dp"
-        android:textColor="#0d0c0c" />
+        android:textColor="#D6EAF8" />
 
     <TextView
         android:layout_marginTop="30dp"
