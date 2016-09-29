@@ -65,7 +65,7 @@
             android:id="@+id/login"
             android:onClick="onclick"
             android:textColor="@android:color/white"
-            android:background="@drawable/button"
+            android:background="@drawable/ripple"
             android:layout_above="@+id/textView"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
@@ -80,7 +80,7 @@
             android:id="@+id/textView"
             android:onClick="onclicksignupi"
             android:textColor="@android:color/white"
-            android:background="@drawable/button"
+            android:background="@drawable/ripple"
 
             android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"

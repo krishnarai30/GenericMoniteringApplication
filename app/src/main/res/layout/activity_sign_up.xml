@@ -59,7 +59,7 @@
         android:ems="15"
         android:layout_gravity="center_horizontal"
         android:id="@+id/button"
-        android:background="@drawable/button"
+        android:background="@drawable/ripple"
         android:layout_marginTop="32dp"
         android:onClick="onclicksignupf" />
     <TextView

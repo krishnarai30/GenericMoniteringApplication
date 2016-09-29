@@ -8,12 +8,16 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MenuActivity"
-    android:background="#A5D6A7">
+    android:background="@drawable/background">
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:text="CONFIGURE"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:background="@drawable/ripple_1"
         android:id="@+id/configurebtn"
         android:layout_marginTop="125dp"
         android:layout_alignParentTop="true"
@@ -21,9 +25,11 @@
         android:onClick="onconfigclick" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:text="CONNECT"
+        android:textSize="24sp"
+        android:background="@drawable/ripple_1"
         android:id="@+id/connectbtn"
         android:layout_marginTop="85dp"
         android:layout_below="@+id/configurebtn"

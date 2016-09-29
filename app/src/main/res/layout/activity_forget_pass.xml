@@ -68,7 +68,7 @@
         android:layout_height="50dp"
         android:text="RECOVER"
         android:id="@+id/recoverbtn"
-        android:background="@drawable/button"
+        android:background="@drawable/ripple"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="171dp"

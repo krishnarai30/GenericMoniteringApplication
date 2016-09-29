@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="layout.UserMode"
-    android:background="#baf6a6">
+    android:background="#311B92">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -26,6 +26,10 @@
         android:layout_height="wrap_content"
         android:text="ALERTS"
         android:id="@+id/alertsbtn"
+        android:background="@drawable/ripple_2"
+        android:textColor="#311B92"
+        android:textSize="18sp"
+        android:ems="9"
         android:layout_marginTop="133dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -37,6 +41,10 @@
         android:text="ACTUATION"
         android:id="@+id/actuationbtn"
         android:layout_marginTop="70dp"
+        android:background="@drawable/ripple_2"
+        android:textColor="#311B92"
+        android:textSize="18sp"
+        android:ems="9"
         android:layout_below="@+id/alertsbtn"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal|top" />
@@ -46,9 +54,13 @@
         android:layout_height="wrap_content"
         android:text="DATA"
         android:id="@+id/databtn"
+        android:background="@drawable/ripple_2"
+        android:textColor="#311B92"
+        android:textSize="18sp"
+        android:ems="9"
         android:layout_below="@+id/actuationbtn"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="70dp"
         android:layout_gravity="center" />
 
 </RelativeLayout>

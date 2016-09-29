@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".ConfigureActivity"
     android:orientation="vertical"
+    android:background="@drawable/background"
     android:gravity="center_horizontal|center_vertical">
 
     <TextView
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="Enter number of Entries"
         android:textSize="32sp"
+        android:textColor="#FFFFFF"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="16dp"
         />
@@ -19,17 +21,21 @@
     <EditText
         android:layout_marginTop="16dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:textSize="32sp"
         android:id="@+id/entries"
+        style="@style/SignUpEditTextStyle"
+        android:backgroundTint="#FFFFFF"
         android:layout_marginBottom="16dp"
         android:inputType="number"
+        android:cursorVisible="true"
         android:ems="7"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="128dp"
+        android:background="@drawable/ripple_1"
+        android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:text="Next"
         android:id="@+id/button2"

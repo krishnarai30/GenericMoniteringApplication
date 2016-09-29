@@ -1,5 +1,6 @@
 package sd_dtu.genericmoniteringapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -7,7 +8,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class ConfigureActivity extends AppCompatActivity {
-    String number_of_entries;
+    int number;
+    TextView entries;
+    int i = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,8 +20,15 @@ public class ConfigureActivity extends AppCompatActivity {
 
     public void next(View view)
     {
-        TextView entries = (TextView) findViewById(R.id.entries);
-        number_of_entries  =  entries.getText().toString();
+        entries = (TextView) findViewById(R.id.entries);
+        String number_of_entries  =  entries.getText().toString();
+        number = Integer.parseInt(number_of_entries);
+        nextActivity();
+    }
 
+    public void nextActivity()
+    {
+            Intent intent = new Intent(this,configure_data.class).putExtra("Number",number);
+            startActivity(intent);
     }
 }

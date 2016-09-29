@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="layout.ExpertMode"
-    android:background="#fb3636">
+    android:background="#D50000"
+    android:padding="24dp">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -13,6 +14,10 @@
         android:layout_height="wrap_content"
         android:text="ALERTS"
         android:id="@+id/alertbtn3"
+        android:ems="12"
+        android:background="@drawable/ripple_2"
+        android:textColor="#D50000"
+        android:textSize="18sp"
         android:layout_above="@+id/databtn3"
         android:layout_alignLeft="@+id/databtn3"
         android:layout_alignStart="@+id/databtn3"
@@ -23,6 +28,10 @@
         android:layout_height="wrap_content"
         android:text="DATA"
         android:id="@+id/databtn3"
+        android:ems="12"
+        android:background="@drawable/ripple_2"
+        android:textColor="#D50000"
+        android:textSize="18sp"
         android:layout_above="@+id/resultbtn"
         android:layout_alignLeft="@+id/resultbtn"
         android:layout_alignStart="@+id/resultbtn"
@@ -31,7 +40,11 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:ems="12"
         android:text="RESULTS"
+        android:background="@drawable/ripple_2"
+        android:textColor="#D50000"
+        android:textSize="18sp"
         android:id="@+id/resultbtn"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
@@ -40,8 +53,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CALCULATE"
+        android:ems="12"
         android:id="@+id/calculatebtn2"
         android:layout_marginTop="30dp"
+        android:background="@drawable/ripple_2"
+        android:textColor="#D50000"
+        android:textSize="18sp"
         android:layout_below="@+id/resultbtn"
         android:layout_centerHorizontal="true" />
 
@@ -50,8 +67,12 @@
         android:layout_height="wrap_content"
         android:text="TRENDS"
         android:id="@+id/trendbtn"
+        android:ems="12"
         android:layout_below="@+id/calculatebtn2"
         android:layout_alignLeft="@+id/resultbtn"
+        android:background="@drawable/ripple_2"
+        android:textColor="#D50000"
+        android:textSize="18sp"
         android:layout_alignStart="@+id/resultbtn"
         android:layout_marginTop="27dp" />
     <android.support.design.widget.FloatingActionButton
@@ -60,8 +81,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:src="@android:drawable/ic_dialog_email"
-        android:layout_marginRight="35dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="16dp"
         android:layout_marginEnd="35dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
