@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+<LinearLayout
+    android:layout_gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_marginTop="32dp"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        android:ems="12"
+        android:textColorHint="#90A4AE"
+        android:backgroundTint="#FFFFFF"
+        android:hint="Name"
+        style="@style/SignUpEditTextStyle"
+        />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:spinnerMode="dropdown"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="40dp" />
+
+    <EditText
+        android:id="@+id/lower_limit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        style="@style/SignUpEditTextStyle"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:ems="12"
+        android:inputType="number"
+        android:backgroundTint="#FFFFFF"
+        android:textColorHint="#90A4AE"
+        android:hint="Lower Limit"
+        />
+
+    <EditText
+        android:id="@+id/upper_limit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        style="@style/SignUpEditTextStyle"
+        android:layout_gravity="center"
+        android:ems="12"
+        android:inputType="number"
+        android:textColorHint="#90A4AE"
+        android:backgroundTint="#FFFFFF"
+        android:hint="Upper Limit"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+       />
+</LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/ripple"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+</LinearLayout>
