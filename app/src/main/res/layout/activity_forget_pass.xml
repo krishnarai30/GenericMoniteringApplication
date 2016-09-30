@@ -33,7 +33,7 @@
         android:paddingLeft="4dp"
         android:inputType="textEmailAddress"
         android:ems="10"
-        android:id="@+id/editText3"
+        android:id="@+id/forget_email"
         android:hint="   Email"
         android:background="@drawable/edit_text_style"
         android:layout_above="@+id/textView25"
@@ -59,7 +59,6 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="PASSWORD"
         android:textColor="#ffffff"
-        android:id="@+id/textView19"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="30dp"/>
 

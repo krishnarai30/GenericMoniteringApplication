@@ -5,24 +5,40 @@ import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 
 public class configure_data extends AppCompatActivity {
     int n;
     Button button_next;
+    EditText name;
+    EditText upper;
+    EditText lower;
+    String[] list = {"Int","Float","Double","Signed"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_configure_data);
         button_next = (Button) findViewById(R.id.button);
+        name = (EditText)findViewById(R.id.name);
+        upper = (EditText)findViewById(R.id.upper_limit);
+        lower = (EditText)findViewById(R.id.lower_limit);
+        Spinner spinner = (Spinner)findViewById(R.id.spinner);
+        ArrayAdapter adapter = new ArrayAdapter(this,android.R.layout.simple_dropdown_item_1line,list);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
         n = getIntent().getIntExtra("Number",-1);
         if (n==1)
         {
@@ -32,17 +48,26 @@ public class configure_data extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(n>1) {
-                    TextView name_textview = (TextView) findViewById(R.id.name);
-                    ArrayList<items> list_item = new ArrayList<>();
-                    list_item.add(new items(name_textview.getText().toString(), "check", 45, 46));
-                    Intent intent = new Intent(getBaseContext(), configure_data.class).putExtra("Number",n-1);
-                    startActivity(intent);
+                    if(TextUtils.isEmpty(name.getText().toString())||TextUtils.isEmpty(upper.getText().toString())||TextUtils.isEmpty(lower.getText().toString()))
+                    {
+                        Toast.makeText(getBaseContext(),"Data Insufficient",Toast.LENGTH_SHORT).show();
+                    }
+                    else {
+                        Intent intent = new Intent(getBaseContext(), configure_data.class).putExtra("Number", n - 1);
+                        startActivity(intent);
+                    }
                 }
                 else
                 {
-                    Toast.makeText(getBaseContext(),"Data Saved!",Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(getBaseContext(),MenuActivity.class);
-                    startActivity(intent);
+                    if(TextUtils.isEmpty(name.getText().toString())||TextUtils.isEmpty(upper.getText().toString())||TextUtils.isEmpty(lower.getText().toString()))
+                    {
+                        Toast.makeText(getBaseContext(),"Data Insufficient",Toast.LENGTH_SHORT).show();
+                    }
+                    else {
+                        Toast.makeText(getBaseContext(), "Data Saved!", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(getBaseContext(), MenuActivity.class);
+                        startActivity(intent);
+                    }
                 }
             }
         });
