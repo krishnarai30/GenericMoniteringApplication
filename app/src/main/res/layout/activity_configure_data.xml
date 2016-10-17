@@ -23,17 +23,23 @@
         android:textColorHint="#90A4AE"
         android:backgroundTint="#FFFFFF"
         android:hint="Name"
-        style="@style/SignUpEditTextStyle"
-        />
-
-    <Spinner
-        android:id="@+id/spinner"
+        style="@style/SignUpEditTextStyle" />
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/name"
-        android:spinnerMode="dropdown"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="40dp" />
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/spinner_background"
+        android:layout_marginBottom="15dp">
+        <Spinner
+            android:layout_marginLeft="8dp"
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:spinnerMode="dropdown"
+            android:layout_gravity="center_horizontal" />
+
+    </RelativeLayout>
+
 
     <EditText
         android:id="@+id/lower_limit"
@@ -42,7 +48,6 @@
         style="@style/SignUpEditTextStyle"
         android:layout_gravity="center_vertical|center_horizontal"
         android:ems="12"
-        android:inputType="number"
         android:backgroundTint="#FFFFFF"
         android:textColorHint="#90A4AE"
         android:hint="Lower Limit"
@@ -55,7 +60,6 @@
         style="@style/SignUpEditTextStyle"
         android:layout_gravity="center"
         android:ems="12"
-        android:inputType="number"
         android:textColorHint="#90A4AE"
         android:backgroundTint="#FFFFFF"
         android:hint="Upper Limit"

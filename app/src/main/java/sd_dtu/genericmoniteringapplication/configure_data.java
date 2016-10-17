@@ -26,6 +26,7 @@ public class configure_data extends AppCompatActivity {
     EditText name;
     EditText upper;
     EditText lower;
+    String Name;
     String[] list = {"Int","Float","Double","Signed"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,8 +36,8 @@ public class configure_data extends AppCompatActivity {
         name = (EditText)findViewById(R.id.name);
         upper = (EditText)findViewById(R.id.upper_limit);
         lower = (EditText)findViewById(R.id.lower_limit);
-        Spinner spinner = (Spinner)findViewById(R.id.spinner);
-        ArrayAdapter adapter = new ArrayAdapter(this,android.R.layout.simple_dropdown_item_1line,list);
+        final Spinner spinner = (Spinner)findViewById(R.id.spinner);
+        ArrayAdapter adapter = new ArrayAdapter(this,R.layout.spinner_layout,list);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         n = getIntent().getIntExtra("Number",-1);
@@ -48,13 +49,25 @@ public class configure_data extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(n>1) {
+
+
                     if(TextUtils.isEmpty(name.getText().toString())||TextUtils.isEmpty(upper.getText().toString())||TextUtils.isEmpty(lower.getText().toString()))
                     {
                         Toast.makeText(getBaseContext(),"Data Insufficient",Toast.LENGTH_SHORT).show();
                     }
-                    else {
-                        Intent intent = new Intent(getBaseContext(), configure_data.class).putExtra("Number", n - 1);
-                        startActivity(intent);
+                    else
+                    {
+                        int low = Integer.parseInt(lower.getText().toString());
+                        int up = Integer.parseInt(upper.getText().toString());
+                        if(low>up)
+                        {
+                            Toast.makeText(getBaseContext(),"Lower limit greater than upper limit",Toast.LENGTH_SHORT).show();
+                        }
+                        else {
+
+                            Intent intent = new Intent(getBaseContext(), configure_data.class).putExtra("Number", n - 1);
+                            startActivity(intent);
+                        }
                     }
                 }
                 else
